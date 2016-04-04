@@ -8,10 +8,10 @@ $( "#balloon1" ).click(function() {
       left: "25px",
       height: windowHeight
     }, 1000 )
-    .animate({ fontSize: "32px" }, 1000, complete: fadeInText() );
-    complete: function() {
-      $(".main-text").fadeIn({ display: "block"}, 1000);
-    }
+    .animate({ fontSize: "32px" }, 1000, function() {
+      $(".main-text").fadeIn({ display: "block"}, 1000)
+    });
+
 });
 
 function fadeInText() {
