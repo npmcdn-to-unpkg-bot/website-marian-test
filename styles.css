@@ -10,6 +10,40 @@ body {
   -o-background-size: cover;
   -webkit-background-size: cover;
 }
+@font-face {
+    font-family: SF_New_Republic_Bold;
+    src: url(fonts/SF_New_Republic_Bold.ttf);
+}
+
+
+Try it yourself »
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  padding: 0 50px;
+  color: #494949;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #2e2e2e;
+  padding: 0 50px;
+}
+
+.logo {
+    background-image: url('img/logo.png');
+    display: block;
+    position: absolute;
+    height: 167px;
+    width: 326px;
+}
+
 .show {
   display: block;
 }
@@ -22,17 +56,48 @@ body {
 
 }
 .balloon {
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  color: white;
+  width: 150px;
+  height: 150px;
+  color:#000;
+  background:#fff;
   position: absolute;
   top: 200px;
-  overflow-y: scroll;
+  box-shadow: 2px 2px 5px #474747;
+  border-top-right-radius:15px;
+  border-bottom-left-radius:15px;
+  overflow-y: hidden;
   left: 300px;
+}
+.balloon:before {
+  content:"";
+  position:relative;
+  bottom:150px;
+  right:0px;
+  border:0;
+  border-right-width:15px;
+  border-bottom-width:25px;
+  border-style:solid;
+  border-color:transparent #000;
+  display:block;
+  width:0;
+}
+
+.balloon h1 {
+  margin: -20px 0 0 5px;
+  font-size: 34px;
+  font-family: SF_New_Republic_Bold;
+  transition: ease-in 0.3s;
+
+}
+
+.balloon h1:hover {
+  color: #0099CC;
+  font-size: 36px;
+  cursor: pointer;
 }
 
 .main-text {
   display: none;
+  overflow-y: scroll;
   position: absolute;
 }

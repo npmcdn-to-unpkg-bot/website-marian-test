@@ -14,9 +14,6 @@ $( "#balloon1" ).click(function() {
 
 });
 
-function fadeInText() {
-$(".main-text").fadeIn({ display: "block"}, 1000)
-};
 // //rezise window height function
 //
 //   function setHeight() {
