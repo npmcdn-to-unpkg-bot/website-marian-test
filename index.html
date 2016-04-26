@@ -23,7 +23,7 @@
     </div>
   <div class="col-md-10">
 
-    <div class="balloon" id="balloon1">
+    <div class="balloon draggable" id="balloon1">
       <a href="#" class="balloon-link" data-featherlight="#lightbox">Marian Spier</a>
         <div class="balloon-show" id="lightbox">
           <div class="container">
@@ -47,25 +47,20 @@
                       </p>
                     </div>
                   </div>
-                <div class="row white-space">
-                  <div class="col-md-10 col-md-offset-1">
-                      <div class="row">
-                        <ul class="social-buttons list-inline text-center">
-                          <li><a href="https://nl.linkedin.com/in/johan-van-den-tillaart-20249a41" target="_blank"><i class="fa fa-facebook fa-4x"></i>
-                          Social: facebook.com
-                          </li></a>
-
-                          <li><a href="https://nl.linkedin.com/in/johan-van-den-tillaart-20249a41" target="_blank"><i class="fa fa-envelope fa-4x"></i>
-                          Mail: hello@spier.nl
-                          </li></a>
-
-                          <li><a href="https://nl.linkedin.com/in/johan-van-den-tillaart-20249a41" target="_blank"><i class="fa fa-mobile fa-4x"></i>
-                          Telephone: 12345678
-                          </li></a>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
+                      <div class="row white-space">
+                        <div class="col-md-3 col-md-offset-2 text-center">
+                          <i class="fa fa-facebook fa-4x social-buttons"></i>
+                          <p><a href="facebook.com" class="social">facebook.com</a></p>
+                        </div>
+                        <div class="col-md-3 text-center">
+                          <i class="fa fa-envelope fa-4x"></i>
+                          <p><a href="mailto:hello@spier.nl" class="social">hello@spier.nl</a></p>
+                        </div>
+                        <div class="col-md-3 text-center">
+                          <i class="fa fa-mobile fa-4x"></i>
+                            <p>1234544678</p>
+                        </div>
+                      </div>
           </div>
       </div>
     </div>
@@ -74,6 +69,12 @@
 </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://npmcdn.com/draggabilly@2.1/dist/draggabilly.pkgd.min.js"></script>
 <script src="http://cdn.rawgit.com/noelboss/featherlight/1.4.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 <!-- <script src="script.js"></script> -->
+<script>
+$(document).ready( function() {
+  var $draggable = $('.draggable').draggabilly();
+});
+</script>
 </html>

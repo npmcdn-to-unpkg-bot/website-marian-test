@@ -15,7 +15,25 @@ body {
     src: url(fonts/SF_New_Republic_Bold.ttf);
 }
 
+::-webkit-scrollbar {
+      width: 15px;
+}
+::-webkit-scrollbar-track {
+      background-color: transparent;
+}
 
+::-webkit-scrollbar-thumb {
+      background-color: #0099CC;
+      height: 10px;
+}
+
+::-webkit-scrollbar-button {
+      background-color: transparent;
+}
+
+::-webkit-scrollbar-corner {
+      background-color: black;
+}
 .white-space {
   margin: 80px 0 80px 0;
   position: relative;
@@ -29,13 +47,13 @@ body {
  transform: translateY(-50%);
 }
 
-
-ul.social-buttons li a{
-  display: block;
-  text-align: center;
-  outline: 0;
-  list-style: none;
+.featherlight .featherlight-close-icon {
+  right: 20px;
+  top: 20px;
+  width: 50px;
+  height: 50px;
 }
+
 
 h1 {
   font-family: 'Open Sans', sans-serif;
@@ -59,6 +77,9 @@ p {
     width: 326px;
 }
 
+.social {
+  color: black;
+}
 .show {
   display: block;
 }
@@ -69,6 +90,10 @@ p {
 
 .height {
 
+}
+
+.draggable {
+  cursor: move;
 }
 
 .balloon-show {
@@ -99,9 +124,9 @@ strong {
 
 
 .balloon-link {
-  padding: 5px 0 0 12px;
-  font-size: 42px;
-  line-height: 30px;
+  padding: 17px 0 0 24px;
+  font-size: 36px;
+  line-height: 26px;
   text-decoration: none;
   font-family: SF_New_Republic_Bold;
   transition: ease-in 0.3s;
@@ -112,23 +137,22 @@ strong {
 .balloon-link:hover {
   text-decoration: none;
   color: #0099CC;
-  font-size: 44px;
+  font-size: 38px;
 }
 
 
 .balloon {
-  width: 170px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   color:#000;
-  background:#fff;
   position: absolute;
   top: 200px;
-  box-shadow: 2px 2px 5px #474747;
-  border-top-right-radius:15px;
-  border-bottom-left-radius:15px;
+  background-image: url('img/balloon.png');
   overflow-y: hidden;
   left: 300px;
 }
+
+
 .balloon:before {
   content:"";
   position:relative;
@@ -141,6 +165,14 @@ strong {
   border-color:transparent #000;
   width:0;
 }
+/*
+.balloon .point-edge {
+  background-image: url('img/punt.png');
+  width:26px;
+  height: 25px;
+  position:absolute;
+  top: 125px;
+}*/
 
 .balloon h1 {
   margin: -20px 0 0 5px;
