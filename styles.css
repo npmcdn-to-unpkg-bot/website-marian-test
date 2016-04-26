@@ -124,9 +124,6 @@ strong {
 
 
 .balloon-link {
-  padding: 17px 0 0 24px;
-  font-size: 36px;
-  line-height: 26px;
   text-decoration: none;
   font-family: SF_New_Republic_Bold;
   transition: ease-in 0.3s;
@@ -137,21 +134,50 @@ strong {
 .balloon-link:hover {
   text-decoration: none;
   color: #0099CC;
+}
+
+.link1 {
+  padding: 17px 0 0 24px;
+  font-size: 36px;
+  line-height: 26px;
+}
+
+.link1:hover {
   font-size: 38px;
 }
 
-
-.balloon {
-  width: 200px;
-  height: 200px;
-  color:#000;
-  position: absolute;
-  top: 200px;
-  background-image: url('img/balloon.png');
-  overflow-y: hidden;
-  left: 300px;
+.link2 {
+  margin: 80px 15px 10px 20px;
+  font-size: 44px;
+  text-align: right;
+  line-height: 34px;
 }
 
+.link2:hover {
+  font-size: 46px;
+}
+
+.balloon {
+  color:#000;
+  position: absolute;
+  overflow-y: hidden;
+
+}
+
+#balloon1 {
+  width: 200px;
+  height: 200px;
+  left: 300px;
+  top: 200px;
+  background-image: url('img/balloon.png');
+}
+#balloon2 {
+  width: 200px;
+  height: 220px;
+  left: 600px;
+  top: 250px;
+  background-image: url('img/balloon2.png');
+}
 
 .balloon:before {
   content:"";
