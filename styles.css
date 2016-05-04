@@ -15,8 +15,45 @@ body {
     src: url(fonts/SF_New_Republic_Bold.ttf);
 }
 
+::-webkit-scrollbar {
+      width: 15px;
+}
+::-webkit-scrollbar-track {
+      background-color: transparent;
+}
 
-Try it yourself »
+::-webkit-scrollbar-thumb {
+      background-color: #0099CC;
+      height: 10px;
+}
+
+::-webkit-scrollbar-button {
+      background-color: transparent;
+}
+
+::-webkit-scrollbar-corner {
+      background-color: black;
+}
+.white-space {
+  margin: 80px 0 80px 0;
+  position: relative;
+}
+.horizontal-align {
+  margin: 0 auto;
+}
+.vertical-align {
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+}
+
+.featherlight .featherlight-close-icon {
+  right: 20px;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+}
+
 
 h1 {
   font-family: 'Open Sans', sans-serif;
@@ -24,16 +61,12 @@ h1 {
 }
 
 h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 26px;
-  padding: 0 50px;
-  color: #494949;
+
 }
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   color: #2e2e2e;
-  padding: 0 50px;
 }
 
 .logo {
@@ -44,6 +77,9 @@ p {
     width: 326px;
 }
 
+.social {
+  color: black;
+}
 .show {
   display: block;
 }
@@ -55,32 +91,102 @@ p {
 .height {
 
 }
+
+.draggable {
+  cursor: move;
+}
+
+.balloon-show {
+  display: none;
+}
+
+.balloon-show h2{
+  color: #0099CC;
+  font-size: 64px;
+  padding-bottom: 25px;
+  border-bottom:solid 2px #0099CC;
+  font-family: SF_New_Republic_Bold;
+}
+
+.balloon-show h3{
+  color: black;
+  font-size: 64px;
+  font-family: 'Open Sans', sans-serif;
+}
+.balloon-show p{
+  text-align: center;
+  font-size: 28px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+
+.balloon-link {
+  text-decoration: none;
+  font-family: SF_New_Republic_Bold;
+  transition: ease-in 0.3s;
+  color: black;
+  display: inline-block;
+}
+
+.balloon-link:hover {
+  text-decoration: none;
+  color: #0099CC;
+}
+
+.link1 {
+  margin: 17px 0 0 24px;
+  font-size: 36px;
+  line-height: 26px;
+}
+
+.link1:hover {
+  font-size: 38px;
+}
+
+.link2 {
+  margin: 80px 15px 10px 20px;
+  font-size: 44px;
+  text-align: right;
+  line-height: 34px;
+}
+
+.link2:hover {
+  font-size: 46px;
+}
+
 .balloon {
-  width: 150px;
-  height: 150px;
   color:#000;
-  background:#fff;
   position: absolute;
-  top: 200px;
-  box-shadow: 2px 2px 5px #474747;
-  border-top-right-radius:15px;
-  border-bottom-left-radius:15px;
   overflow-y: hidden;
+
+}
+
+#balloon1 {
+  width: 200px;
+  height: 200px;
   left: 300px;
+  top: 200px;
+  background-image: url('img/balloon.png');
 }
-.balloon:before {
-  content:"";
-  position:relative;
-  bottom:150px;
-  right:0px;
-  border:0;
-  border-right-width:15px;
-  border-bottom-width:25px;
-  border-style:solid;
-  border-color:transparent #000;
-  display:block;
-  width:0;
+#balloon2 {
+  width: 200px;
+  height: 220px;
+  left: 600px;
+  top: 250px;
+  background-image: url('img/balloon2.png');
 }
+
+/*
+.balloon .point-edge {
+  background-image: url('img/punt.png');
+  width:26px;
+  height: 25px;
+  position:absolute;
+  top: 125px;
+}*/
 
 .balloon h1 {
   margin: -20px 0 0 5px;
