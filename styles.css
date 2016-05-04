@@ -137,7 +137,7 @@ strong {
 }
 
 .link1 {
-  padding: 17px 0 0 24px;
+  margin: 17px 0 0 24px;
   font-size: 36px;
   line-height: 26px;
 }
@@ -179,18 +179,6 @@ strong {
   background-image: url('img/balloon2.png');
 }
 
-.balloon:before {
-  content:"";
-  position:relative;
-  bottom:150px;
-  right:0px;
-  border:0;
-  border-right-width:15px;
-  border-bottom-width:25px;
-  border-style:solid;
-  border-color:transparent #000;
-  width:0;
-}
 /*
 .balloon .point-edge {
   background-image: url('img/punt.png');
